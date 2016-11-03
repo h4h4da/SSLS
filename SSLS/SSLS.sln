@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSLS.WebUI", "SSLS.WebUI\SSLS.WebUI.csproj", "{374BC0C6-D080-4744-9E89-B4BF1109E87D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSLS.Domain", "SSLS.Domain\SSLS.Domain.csproj", "{76D50982-0F57-4AAB-8181-43D6860AF432}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{374BC0C6-D080-4744-9E89-B4BF1109E87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374BC0C6-D080-4744-9E89-B4BF1109E87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374BC0C6-D080-4744-9E89-B4BF1109E87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374BC0C6-D080-4744-9E89-B4BF1109E87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D50982-0F57-4AAB-8181-43D6860AF432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D50982-0F57-4AAB-8181-43D6860AF432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D50982-0F57-4AAB-8181-43D6860AF432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D50982-0F57-4AAB-8181-43D6860AF432}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

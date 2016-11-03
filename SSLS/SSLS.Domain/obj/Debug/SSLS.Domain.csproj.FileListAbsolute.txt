@@ -1,0 +1,11 @@
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.dll.config
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.dll
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.pdb
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.dll
+C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.pdb

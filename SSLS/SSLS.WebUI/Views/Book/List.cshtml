@@ -1,0 +1,30 @@
+﻿
+@model SSLS.WebUI.Models.BooksListViewModel
+
+
+<table class="table">
+    <tr>
+        <th>
+            书籍名称
+        </th>
+        <th>
+            出版社
+        </th>
+        <th>
+            作者
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model.Books)
+    {
+
+        @Html.Partial("BookSummary", item);
+       
+    }
+</table>
+
+
+<div class="btn-group pull-right">
+    @Html.PageLink(Model.paginginfo, x => Url.Action("List", new { categoryId = Model.CurrentCategoryId, page = x }))
+</div>

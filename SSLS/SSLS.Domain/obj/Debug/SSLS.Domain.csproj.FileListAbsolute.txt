@@ -9,3 +9,14 @@ C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\bin\Debug\zh-Hans\EntityFramewor
 C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.dll
 C:\Users\Si\Desktop\WebMystore\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.pdb
+D:\new\mySSLS\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.dll.config
+D:\new\mySSLS\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.dll
+D:\new\mySSLS\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.pdb
+D:\new\mySSLS\SSLS\SSLS.Domain\bin\Debug\EntityFramework.dll
+D:\new\mySSLS\SSLS\SSLS.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\new\mySSLS\SSLS\SSLS.Domain\bin\Debug\EntityFramework.xml
+D:\new\mySSLS\SSLS\SSLS.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\new\mySSLS\SSLS\SSLS.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\new\mySSLS\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.csprojResolveAssemblyReference.cache
+D:\new\mySSLS\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.dll
+D:\new\mySSLS\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.pdb

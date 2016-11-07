@@ -27,12 +27,13 @@ namespace SSLS.WebUI.Controllers
         }
        
        [HttpPost]
-        public ViewResult List(BooksListViewModel model)
+        public ViewResult List(string searchBookstr)
         {
 
             IQueryable<Book> productlist = repository.Books;
-            if (model.SearchBookStr != null) {
-                productlist = repository.Books.Where(p => p.Name.Contains(model.SearchBookStr));
+            if (searchBookstr != null)
+            {
+                productlist = repository.Books.Where(p => p.Name.Contains(searchBookstr));
             }
             BooksListViewModel viewModel = new BooksListViewModel
             {

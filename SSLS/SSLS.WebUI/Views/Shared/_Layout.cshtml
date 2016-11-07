@@ -22,6 +22,21 @@
         </div>
 
         <div class="col-xs-8">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    @using (Html.BeginForm("List","Book"))
+                    {
+
+
+                        <div class="input-group">
+                            @Html.TextBox("searchBookStr", null,new { @class = "form-control" ,})
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">Search</button>
+                            </span>
+                        </div>
+                    }
+                </div>
+            </div>
            
             @RenderBody()
         </div>

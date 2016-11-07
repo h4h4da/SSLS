@@ -1,6 +1,37 @@
 ﻿
 @model SSLS.WebUI.Models.BooksListViewModel
 
+<div class="col-lg-6">
+    <div class="input-group">
+        @using (Html.BeginForm())
+        {
+
+
+            <div class="input-group">
+                @Html.TextBoxFor(vm => vm.SearchBookStr, new { @class = "form-control" })
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Search</button>
+                </span>
+            </div>
+
+            @*<div class="input-group">
+                @Html.TextBoxFor(vm => vm.SearchBookStr, new { @class = "form-control" })
+                <button type="submit" class="input-group-btnt">Submit</button>
+
+            </div>
+            <div class="form-group">
+               
+                <input type="text" class="form-control" placeholder="Search">
+            </div>*@
+            
+           
+            @*<span class="input-group-btn">
+                <button class="btn btn-default" type="submit">Search</button>
+            </span>*@
+        }
+    </div>
+</div>
+
 
 <table class="table">
     <tr>
@@ -20,7 +51,7 @@
     {
 
         @Html.Partial("BookSummary", item);
-       
+
     }
 </table>
 

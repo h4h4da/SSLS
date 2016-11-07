@@ -8,6 +8,7 @@ namespace SSLS.WebUI.Models
 {
     public class BooksListViewModel
     {
+        public string SearchBookStr { get; set; }
         public IEnumerable<Book> Books { get; set; }
 
         public PagingInfo paginginfo { get; set; }

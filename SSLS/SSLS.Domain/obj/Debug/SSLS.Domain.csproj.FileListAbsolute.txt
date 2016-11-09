@@ -20,3 +20,14 @@ D:\new\mySSLS\SSLS\SSLS.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\new\mySSLS\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.csprojResolveAssemblyReference.cache
 D:\new\mySSLS\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.dll
 D:\new\mySSLS\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.pdb
+F:\mySSLS\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.dll.config
+F:\mySSLS\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.dll
+F:\mySSLS\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.pdb
+F:\mySSLS\SSLS\SSLS.Domain\bin\Debug\EntityFramework.dll
+F:\mySSLS\SSLS\SSLS.Domain\bin\Debug\EntityFramework.SqlServer.dll
+F:\mySSLS\SSLS\SSLS.Domain\bin\Debug\EntityFramework.xml
+F:\mySSLS\SSLS\SSLS.Domain\bin\Debug\EntityFramework.SqlServer.xml
+F:\mySSLS\SSLS\SSLS.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\mySSLS\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.csprojResolveAssemblyReference.cache
+F:\mySSLS\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.dll
+F:\mySSLS\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.pdb

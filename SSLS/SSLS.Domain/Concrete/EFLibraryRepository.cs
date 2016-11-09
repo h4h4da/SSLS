@@ -20,6 +20,10 @@ namespace SSLS.Domain.Concrete
             get { return db.Book; }
         }
 
+        public IQueryable<Reader> Readers
+        {
+            get { return db.Reader; }
+        }
        
     }
 }

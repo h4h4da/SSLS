@@ -1,0 +1,77 @@
+﻿
+@model SSLS.WebUI.Models.LoginViewModel
+@{ Layout = null;}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/scripts/jquery-1.9.1.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script type="text/javascript">
+
+        function suc(resText) {
+            //
+            alert(resText);
+        }
+        function err(xhr) {
+            //失败时执行操作，参数为ajaxrequest对象
+            alert(xhr.readyState);
+        }
+    </script>
+    <style type="text/css">
+        #imgLoad {
+            display: none;
+        }
+    </style>
+
+
+
+
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <h1>Example heading <span class="label label-default" style="vertical-align:super">New</span></h1>
+
+    @Ajax.ActionLink("连接文字", "GetDate", new AjaxOptions()
+{
+    HttpMethod = "post",
+    //更新的控件id
+    UpdateTargetId = "contDiv",
+    //更新方式
+    InsertionMode = InsertionMode.InsertAfter
+})
+    <div id="contDiv" style="border:1px solid #0094ff; width:400px;">我很好</div>
+
+    <h1>异步表单：</h1>
+    @using (Ajax.BeginForm("GetDate", "Reader", new AjaxOptions()
+    {
+        //提交请求的方法
+        UpdateTargetId = "texter",
+        InsertionMode = InsertionMode.InsertAfter,
+        HttpMethod = "post",
+        //成功时执行的异步函数
+        OnSuccess = "suc",
+        OnFailure = "err",
+        //请求时加载的图片
+        LoadingElementId = "imgLoad"
+    }))
+    {
+        <div id="texter"  >
+            </div>
+        <input type="submit" />
+        <div id="imgLoad">加载中~~~</div>
+    }
+
+
+
+
+</body>
+</html>

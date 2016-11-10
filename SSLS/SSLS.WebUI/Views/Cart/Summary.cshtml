@@ -1,0 +1,15 @@
+﻿@model SSLS.Domain.Concrete.Cart
+
+<div class="navbar-right">
+    @Html.ActionLink("结算", "Index", "Cart",
+        new { returnUrl = Request.Url.PathAndQuery },
+        new { @class = "btn btn-default navbar-btn" })
+
+
+</div>
+
+<div class="navbar-text navbar-right">
+    <b>购物车：</b>
+    <span id="item_num">@Model.Line.Sum(x => x.Quantity)</span>件,
+</div>
+

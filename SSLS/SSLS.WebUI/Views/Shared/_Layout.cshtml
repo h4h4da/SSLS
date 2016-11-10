@@ -5,8 +5,109 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 
+    <link href="~/Content/toastr.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+   
+    
+    <script src="~/scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/scripts/toastr.js"></script>
+    <script src="~/scripts/fly.js"></script>
+
+    <script src="~/scripts/requestAnimationFrame.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script type="text/javascript">
+        function ttt(obj)
+        {
+            obj.value = "123";
+        }
+
+        function suc(resText) {
+            if (resText == 1) {
+                $('#item_num').text(parseInt($('#item_num').text()) + 1);
+                toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "positionClass": "toast-bottom-center",
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "500",
+                    "timeOut": "1000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                };
+                toastr.success("添加成功");
+
+            }
+            else { err();}
+        }
+        function err() {
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "positionClass": "toast-bottom-center",
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "500",
+                "timeOut": "1000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+            toastr.error("你咋不上天");
+           
+        }
+       
+    </script>
+
+    <script type="text/javascript">
+
+        
+        $(function () {
+            //参数设置，若用默认值可以省略以下面代
+
+           
+            //成功提示绑定
+            $("#success").click(function () {
+                toastr.info('Are you the 6 fingered man?');
+               
+            })
+
+            //信息提示绑定
+            $("#info").click(function () {
+                toastr.info("这是一个提示信息");
+            })
+
+            //敬告提示绑定
+            $("#warning").click(function () {
+                toastr.warning("警告你别来烦我了");
+            })
+
+            //错语提示绑定
+            $("#error").click(function () {
+                toastr.error("出现错误，请更改");
+            })
+
+            //清除窗口绑定
+            $("#clear").click(function () {
+                toastr.clear();
+            })
+        })
+    </script>
+    <style>
+        .test {
+            background: red;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
 
 
 </head>
@@ -14,54 +115,32 @@
 
     <div class="navbar navbar-inverse" role="navigation">
         <a class="navbar-brand" href="#">SSLS</a>
+        @Html.Action("Summary", "Cart")
       
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a><img src="~/Images/hasky.jpg" alt="" width="40" height="40" class="img-circle"  /></a>
-
-            </li>
-            <li >
-                <a href="#">Link</a>
-                
-            </li>
-           
-
-
-        </ul>
+       <a class=""> <img src="~/Images/hasky.jpg" alt="" width="40" height="40" class="img-circle" /></a>
+        
 
     </div>
 
-    <div class="row panel">
+    <script>
+    $('<div class="test"></div>').fly({
+      start: {top: 542, left: 622},
+      end: { top: 560, left: 622, width: 20, height: 20 },
+      onEnd: function(){
+        
+        this.destory();
+      }
+    });
+    </script>
+
+  
+    <div class="row panel" style="vertical-align:central">
         <div id="categories" class="col-xs-3">
             @Html.Action("Menu", "Nav")
         </div>
 
         <div class="col-xs-8">
-            <div class="col-lg-6">
-                <div class="input-group">
-                    @using (Html.BeginForm("List", "Book"))
-                    {
-                        <div class="container" style="margin-bottom:20px">
-                            <div class="row">
-                                <div class="col-md-6">
-
-                                    <div id="custom-search-input">
-                                        <div class="input-group col-md-12">
-
-                                            @Html.TextBox("searchBookStr", null, new { @class = "form-control", placeholder = "输入书名" })
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-info" type="submit">
-                                                    <span class="glyphicon glyphicon-search"></span>
-                                                </button>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                </div>
-            </div>
+           
 
             @RenderBody()
         </div>

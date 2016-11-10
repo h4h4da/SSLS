@@ -1,6 +1,35 @@
 ﻿
 @model SSLS.WebUI.Models.BooksListViewModel
 
+<div class="col-lg-6">
+    <div class="input-group">
+        @using (Html.BeginForm("List", "Book"))
+        {
+            <div class="container" style="margin-bottom:20px">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+
+                                @Html.TextBox("searchBookStr", null, new { @class = "form-control", placeholder = "输入书名" })
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info" type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
 
 
 
@@ -14,6 +43,9 @@
         </th>
         <th>
             作者
+        </th>
+        <th>
+            
         </th>
 
     </tr>

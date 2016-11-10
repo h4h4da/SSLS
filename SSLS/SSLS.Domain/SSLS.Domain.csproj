@@ -59,6 +59,8 @@
     <Compile Include="Concrete\Borrow.cs">
       <DependentUpon>SSLS.tt</DependentUpon>
     </Compile>
+    <Compile Include="Concrete\Cart.cs" />
+    <Compile Include="Concrete\CartLine.cs" />
     <Compile Include="Concrete\Category.cs">
       <DependentUpon>SSLS.tt</DependentUpon>
     </Compile>

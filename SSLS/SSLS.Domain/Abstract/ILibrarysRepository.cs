@@ -12,5 +12,12 @@ namespace SSLS.Domain.Abstract
         IQueryable<Book> Books { get; }
         IQueryable<Category> Categories { get; }
         IQueryable<Reader> Readers { get; }
+        void SaveBook(Book book);
+
+        Book DeleteBook(int id);
+
+        void SaveCategory(Category category);
+
+        Category DeleteCategory(int id);
     }
 }

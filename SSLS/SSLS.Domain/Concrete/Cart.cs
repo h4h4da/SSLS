@@ -30,7 +30,6 @@ namespace SSLS.Domain.Concrete
             else return -1;
         }
 
-
         public void Clear()
         {
             lineCollection.Clear();

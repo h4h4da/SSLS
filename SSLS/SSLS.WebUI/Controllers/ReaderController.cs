@@ -18,6 +18,11 @@ namespace SSLS.WebUI.Controllers
         {
             this.repository = repository;
         }
+
+        public PartialViewResult Summary(Reader reader)
+        {
+            return PartialView(reader);
+        }
         public ActionResult Index()
         {
             return View();
@@ -44,6 +49,11 @@ namespace SSLS.WebUI.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (((string)Session["ValidateCode"]).ToLower() != model.ValidateCode.ToLower())
+                {
+                    ModelState.AddModelError("", "验证码错误");
+                    return View();
+                }
                 Reader readerEntry = repository.Readers.FirstOrDefault(c => c.Id == model.UserName && c.Password == model.PassWord);
                 if (readerEntry != null)
                 {

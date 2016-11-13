@@ -12,5 +12,7 @@ namespace SSLS.WebUI.Models
         public int UserName { get; set; }
         [Required]
         public string PassWord { get; set; }
+
+        public string ValidateCode { get; set; }
     }
 }

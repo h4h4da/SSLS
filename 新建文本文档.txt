@@ -1,1 +1,4 @@
 Install-Package Microsoft.jQuery.Unobtrusive.Validation
+
+20:24 2016/11/10
+增加了管理员对分类，书籍的增删改查， 视图还未添加。
